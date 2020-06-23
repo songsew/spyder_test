@@ -34,3 +34,59 @@ sns.lineplot(data=df, x='year', y='passengers', hue='month')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.1)
 # legend는 lineplot을 그리고 난 후(순서 중요) 설정해줘야 정상적으로 동작
 
+#%% month와 year를 바꿔보자(hue='year')
+plt.figure(figsize=(15, 4))
+sns.lineplot(data=df, x='month', y='passengers', hue='year')
+plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.1)
+
+#%% boxplot
+plt.figure(figsize=(15,4))
+sns.boxplot(data=df, x='year', y='passengers')
+
+#%% boxenplot
+plt.figure(figsize=(15,4))
+sns.boxenplot(data=df, x='year', y='passengers')
+
+#%% violinplot
+plt.figure(figsize=(15,4))
+sns.violinplot(data=df, x='year', y='passengers')
+
+#%% swarmplot
+plt.figure(figsize=(15,4))
+sns.swarmplot(data=df, x='year', y='passengers')
+
+#%% boxplot, x='month'
+plt.figure(figsize=(15,4))
+sns.boxplot(data=df, x='month', y='passengers')
+
+#%% violinplot, x='month'
+plt.figure(figsize=(15,4))
+sns.violinplot(data=df, x='month', y='passengers')
+
+#%% regplot
+plt.figure(figsize=(15,4))
+sns.regplot(data=df, x='year', y='passengers')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
